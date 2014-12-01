@@ -1,0 +1,20 @@
+<div class="container">
+  <h1 class="subheader"><%= @post.title %></h1>
+  <p id="postbody"><%= @post.body %></p>
+  <p id="postbody"><b>Tags:</b>
+
+    <% @tags.each do |t| %>
+    <a href= "/tag/<%=t.name%>"><%= t.name %></a>
+    <% end %>
+  </p>
+    <table>
+      <tr>
+
+        <td width="40px"><p><a href = "/post/<%= @post.id %>/edit">Edit</a></p></td>
+        <td width="50px"><p><a href = "/delete/<%= @post.id %>">Delete</a></p></td>
+        <td width="50px"><p><a href = "/">Home</a></p></td>
+        <td width="200px"><p><a href = "/post/new">Create another post</a></p></td>
+      </tr>
+    </table>
+
+</div>

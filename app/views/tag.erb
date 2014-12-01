@@ -1,0 +1,21 @@
+<div class="container">
+  <h1>Posts with the tag <i>"<%= @tag.name %></i>"</h1>
+    <table>
+      <tr>
+        <td width="50%"><b>Title</b></td>
+        <td width="50%"><b>Body</b></td>
+      </tr>
+      <tr>
+      <% @posts.each do |b| %>
+      <td><a href="/post/<%=b.id%>"><%=b.title%></a></td>
+      <td><%= b.body %></td>
+    </tr>
+    <%end%>
+  </table>
+</br>
+  <div class= "speciallink">
+    <a href="/"> Home </a>
+  </div>
+</div>
+
+  <!-- @post_ids = Tagging.where(id: "#{te.id}") -->

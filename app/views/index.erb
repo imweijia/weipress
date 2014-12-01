@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="logo">
+  <h1 class="mainheader">WeiPress</h1>
+  </div>
+  </br>
+
+  <h2 class="subheader">Create a New Post</h2>
+
+  <h3><a href="/post/new">Create</a> your new blog for free now.</h3>
+  </br>
+  </br>
+
+  <h2 class="subheader">Latest posts</h2>
+
+  <table>
+    <tr>
+      <td width="50%"><b>Title</b></td>
+      <td width="50%"><b>Blurb</b></td>
+    </tr>
+    <% @posts.each do |b| %>
+    <tr>
+      <td><a href="/post/<%=b.id%>"><%=b.title%></td>
+      <td><%= b.body %></td>
+      <%end%>
+    </tr>
+  </table>
+</div>
+

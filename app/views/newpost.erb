@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>New Post</h1>
+  <h2>Start writing to inspire...</h2>
+    <form action="/post/new" method="post">
+    <br/>
+    <input type="text" class="fixwidth" placeholder="Blog Title" name="post[title]"></br></br></br></br>
+    <div class="blogpost">
+    Blog Post</br></br>
+    </div>
+    <input type="textarea" id="blogpost" class="fixwidth" placeholder="What quirky thing happened in your life today?" name="post[body]"><br><br>
+    <label for="post_tags">Tags:</label>
+    <input id="post_tags" name="tag[name]" placeholder="insert tags, another tag">
+    <input type="submit" value="Publish"><br><br>
+  </form>
+  <p><a href = "/">Home</a></p>
+</div>
+
